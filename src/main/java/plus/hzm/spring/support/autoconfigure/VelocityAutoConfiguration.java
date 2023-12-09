@@ -4,29 +4,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.velocity.app.Velocity;
-import org.apache.velocity.app.VelocityEngine;
-import org.springframework.boot.autoconfigure.AutoConfigureAfter;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.web.ConditionalOnEnabledResourceChain;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.web.servlet.resource.ResourceUrlEncodingFilter;
 
-import plus.hzm.spring.support.velocity.VelocityEngineFactory;
 import plus.hzm.spring.support.velocity.VelocityEngineFactoryBean;
 import plus.hzm.spring.support.velocity.VelocityEscapeEventHandler;
 import plus.hzm.spring.support.velocity.VelocityViewResolver;
 
-@Configuration
-@ConditionalOnClass({ VelocityEngine.class, VelocityEngineFactory.class })
-@AutoConfigureAfter(name = {
-        "org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration",
-        "org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration"
-})
+@AutoConfiguration
 @EnableConfigurationProperties(VelocityProperties.class)
 public class VelocityAutoConfiguration {
     private final VelocityProperties properties;
@@ -36,7 +27,6 @@ public class VelocityAutoConfiguration {
     }
 
     @Bean
-    @ConditionalOnMissingBean
     public VelocityEngineFactoryBean velocityConfiguration() {
         VelocityEngineFactoryBean bean = new VelocityEngineFactoryBean();
         Map<String, Object> velocityPropertiesMap = new HashMap<String, Object>();

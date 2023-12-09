@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>plus.hzm.maven</groupId>
 	<artifactId>spring-boot-common</artifactId>
-	<version>0.3.3-SNAPSHOT</version>
+	<version>0.3.4</version>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-dependencies</artifactId>
@@ -60,9 +60,6 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
-				<excludes>
-					<exclude>META-INF/**/*</exclude>
-				</excludes>
 			</resource>
 		</resources>
 		<plugins>
@@ -143,7 +140,8 @@
 		</snapshotRepository>
 		<repository>
 			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<url>
+				https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
 </project>
