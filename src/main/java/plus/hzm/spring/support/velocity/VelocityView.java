@@ -1,4 +1,4 @@
-package plus.hzm.maven.support.velocity;
+package plus.hzm.spring.support.velocity;
 
 import java.io.StringWriter;
 import java.util.Map;
@@ -17,7 +17,7 @@ import org.springframework.web.servlet.view.AbstractTemplateView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import plus.hzm.maven.support.autoconfigure.VelocityProperties;
+import plus.hzm.spring.support.autoconfigure.VelocityProperties;
 
 public class VelocityView extends AbstractTemplateView {
 

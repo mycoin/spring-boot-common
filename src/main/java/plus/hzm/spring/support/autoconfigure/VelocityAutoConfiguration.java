@@ -1,4 +1,4 @@
-package plus.hzm.maven.support.autoconfigure;
+package plus.hzm.spring.support.autoconfigure;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,10 +16,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.web.servlet.resource.ResourceUrlEncodingFilter;
 
-import plus.hzm.maven.support.velocity.VelocityEngineFactory;
-import plus.hzm.maven.support.velocity.VelocityEngineFactoryBean;
-import plus.hzm.maven.support.velocity.VelocityEscapeEventHandler;
-import plus.hzm.maven.support.velocity.VelocityViewResolver;
+import plus.hzm.spring.support.velocity.VelocityEngineFactory;
+import plus.hzm.spring.support.velocity.VelocityEngineFactoryBean;
+import plus.hzm.spring.support.velocity.VelocityEscapeEventHandler;
+import plus.hzm.spring.support.velocity.VelocityViewResolver;
 
 @Configuration
 @ConditionalOnClass({ VelocityEngine.class, VelocityEngineFactory.class })

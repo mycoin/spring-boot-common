@@ -1,4 +1,4 @@
-package plus.hzm.maven.support.velocity;
+package plus.hzm.spring.support.velocity;
 
 import org.apache.velocity.app.event.ReferenceInsertionEventHandler;
 import org.apache.velocity.context.Context;

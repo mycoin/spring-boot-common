@@ -1,4 +1,4 @@
-package plus.hzm.maven.support.autoconfigure;
+package plus.hzm.spring.support.autoconfigure;
 
 import org.springframework.boot.autoconfigure.template.AbstractTemplateViewResolverProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;

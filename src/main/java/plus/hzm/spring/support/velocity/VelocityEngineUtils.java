@@ -1,4 +1,4 @@
-package plus.hzm.maven.support.velocity;
+package plus.hzm.spring.support.velocity;
 
 import java.io.StringWriter;
 import java.io.Writer;
