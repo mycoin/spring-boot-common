@@ -1,4 +1,4 @@
-package org.springframework.boot.autoconfigure.velocity;
+package plus.hzm.maven.support.autoconfigure;
 
 import java.util.HashMap;
 import java.util.Map;

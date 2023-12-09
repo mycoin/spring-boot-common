@@ -1,10 +1,13 @@
 META-INF/spring-configuration-metadata.json
 plus/hzm/maven/support/velocity/VelocityEscapeEventHandler.class
+plus/hzm/maven/support/autoconfigure/VelocityProperties.class
+META-INF/maven/plus.hzm.maven/spring-boot-common/pom.xml
+plus/hzm/maven/support/velocity/VelocityViewResolver.class
+plus/hzm/maven/support/autoconfigure/VelocityAutoConfiguration.class
 plus/hzm/maven/support/velocity/VelocityView.class
-org/springframework/boot/autoconfigure/velocity/VelocityAutoConfiguration.class
 plus/hzm/maven/support/velocity/VelocityEngineFactory.class
 plus/hzm/maven/support/velocity/SpringResourceLoader.class
-org/springframework/boot/autoconfigure/velocity/VelocityProperties.class
-plus/hzm/maven/support/velocity/VelocityViewResolver.class
+META-INF/maven/plus.hzm.maven/spring-boot-common/pom.properties
+META-INF/MANIFEST.MF
 plus/hzm/maven/support/velocity/VelocityEngineFactoryBean.class
 plus/hzm/maven/support/velocity/VelocityEngineUtils.class

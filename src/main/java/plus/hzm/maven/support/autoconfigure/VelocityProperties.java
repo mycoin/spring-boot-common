@@ -1,4 +1,4 @@
-package org.springframework.boot.autoconfigure.velocity;
+package plus.hzm.maven.support.autoconfigure;
 
 import org.springframework.boot.autoconfigure.template.AbstractTemplateViewResolverProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -10,7 +10,6 @@ import org.apache.velocity.context.Context;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
-import org.springframework.boot.autoconfigure.velocity.VelocityProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextException;
 import org.springframework.util.StringUtils;
@@ -18,6 +17,7 @@ import org.springframework.web.servlet.view.AbstractTemplateView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import plus.hzm.maven.support.autoconfigure.VelocityProperties;
 
 public class VelocityView extends AbstractTemplateView {
 
